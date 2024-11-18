@@ -24,8 +24,8 @@ Trello application automation project runs Automated Test cases using Cucumber B
 ## Installation
 - Clone the repository
       ```
-          git clone https://
-          cd trello-
+          git clone https://github.com/Hemalathadevaraj/trello-app-automation-testing.git
+          cd trello-app-automation-testing
       ```
 - Execute ```mvn clean test```
 - Report are generated in ${project-root}/target/trello/<api/ui>

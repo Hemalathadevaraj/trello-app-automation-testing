@@ -2,7 +2,7 @@ package com.trello.assignment.stepDefinitions.api;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.trello.api.generated.Board;
+import com.trello.assignment.models.Board;
 import com.trello.assignment.apiActions.BoardApiActions;
 import com.trello.assignment.utils.TestDataUtils;
 import com.trello.assignment.utils.ConfigProperties;

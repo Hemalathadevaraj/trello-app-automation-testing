@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.datatable.DataTable;
-import com.trello.api.generated.Board;
+import com.trello.assignment.models.Board;
 import org.openapitools.jackson.nullable.JsonNullableModule;
 
 import java.util.Map;
@@ -17,8 +17,8 @@ public class TestDataUtils {
     public static Board mapDataTableToBoard(DataTable dataTable) {
         Map<String, String> boardDetailsMap = dataTable.asMap();
         Board board = new Board();
-        board.name(boardDetailsMap.get("name"));
-        board.desc(boardDetailsMap.get("desc"));
+        board.setName(boardDetailsMap.get("name"));
+        board.setDesc(boardDetailsMap.get("desc"));
         return board;
     }
 

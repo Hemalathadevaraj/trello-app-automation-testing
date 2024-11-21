@@ -79,41 +79,41 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.openapitools</groupId>
-                <artifactId>openapi-generator-maven-plugin</artifactId>
-                <version>7.7.0</version>
-                <executions>
-                    <execution>
-                        <configuration>
-                            <configOptions>
-                                <dateLibrary>java8</dateLibrary>
-                                <useJakartaEe>true</useJakartaEe>
-                                <booleanGetterPrefix>is</booleanGetterPrefix>
-                            </configOptions>
-                            <importMappings>
-                                <importMapping>LocalDateTime=java.time.LocalDateTime</importMapping>
-                                <importMapping>LocalDate=java.time.LocalDate</importMapping>
-                            </importMappings>
-                            <inputSpec>${project.basedir}/src/main/resources/trello-openapi.json</inputSpec>
-                            <generateApiDocumentation>false</generateApiDocumentation>
-                            <generateApis>false</generateApis>
-                            <generateModelDocumentation>false</generateModelDocumentation>
-                            <generateModelTests>false</generateModelTests>
-                            <generateSupportingFiles>false</generateSupportingFiles>
-                            <library>resttemplate</library>
-                            <skipValidateSpec>true</skipValidateSpec>
-                            <generatorName>java</generatorName>
-                            <modelPackage>com.trello.api.generated</modelPackage>
-                        </configuration>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                        <id>trello</id>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.openapitools</groupId>-->
+<!--                <artifactId>openapi-generator-maven-plugin</artifactId>-->
+<!--                <version>7.7.0</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <configuration>-->
+<!--                            <configOptions>-->
+<!--                                <dateLibrary>java8</dateLibrary>-->
+<!--                                <useJakartaEe>true</useJakartaEe>-->
+<!--                                <booleanGetterPrefix>is</booleanGetterPrefix>-->
+<!--                            </configOptions>-->
+<!--                            <importMappings>-->
+<!--                                <importMapping>LocalDateTime=java.time.LocalDateTime</importMapping>-->
+<!--                                <importMapping>LocalDate=java.time.LocalDate</importMapping>-->
+<!--                            </importMappings>-->
+<!--                            <inputSpec>${project.basedir}/src/main/resources/trello-openapi.json</inputSpec>-->
+<!--                            <generateApiDocumentation>false</generateApiDocumentation>-->
+<!--                            <generateApis>false</generateApis>-->
+<!--                            <generateModelDocumentation>false</generateModelDocumentation>-->
+<!--                            <generateModelTests>false</generateModelTests>-->
+<!--                            <generateSupportingFiles>false</generateSupportingFiles>-->
+<!--                            <library>resttemplate</library>-->
+<!--                            <skipValidateSpec>true</skipValidateSpec>-->
+<!--                            <generatorName>java</generatorName>-->
+<!--                            <modelPackage>com.trello.api.generated</modelPackage>-->
+<!--                        </configuration>-->
+<!--                        <goals>-->
+<!--                            <goal>generate</goal>-->
+<!--                        </goals>-->
+<!--                        <id>trello</id>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+       <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.4.0</version>
